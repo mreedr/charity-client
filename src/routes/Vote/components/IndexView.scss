@@ -1,0 +1,32 @@
+.duck {
+  display: block;
+  margin: 1.5rem auto;
+  width: 120px;
+}
+
+.index-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-input {
+  display: flex;
+}
+
+.song-player-container {
+  align-items: center;
+  display: flex;
+}
+
+.audio-player {
+  display: none;
+}
+
+.play-button {
+  color: black;
+  flex: 1;
+}
+
+.song-title {
+  flex: 10;
+}

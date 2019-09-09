@@ -1,0 +1,84 @@
+$spacing: 30px;
+
+.raffle-container {
+  background: #E9EAED;
+  display: flex;
+  padding: 10px;
+  font-size: 1.2rem;
+  flex-wrap: wrap-reverse;
+}
+
+.info-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.prize-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: $spacing;
+}
+
+.resonance-lineup {
+  border: 1px solid black;
+  width: 60%;
+}
+
+.horizontal-rule {
+  height: 1px;
+  width: 100%;
+  background-color: #959595;
+}
+
+.expire {
+  font-style: italic;
+  font-size: .8rem;
+  margin-bottom: $spacing;
+}
+
+.what-is-this {
+  font-size: .8rem;
+  text-align: left;
+}
+
+.button-raffle {
+  padding: 15px;
+  margin: auto;
+  border-radius: 5px;
+  color: white;
+  border: 1px solid #E36035;
+  background-color: #E36035;
+  cursor: pointer;
+  margin-bottom: $spacing;
+}
+
+.button-raffle:hover {
+  color: #E36035;
+  background: #ffffff;
+  border: #E36035 solid 1px;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 15px;
+}
+
+.proceeds {
+  font-size: .8rem;
+  padding: 10px 0;
+}
+
+.sold {
+  margin-bottom: $spacing;
+}

@@ -1,0 +1,334 @@
+@import 'base';
+@import '~bootstrap/scss/bootstrap.scss';
+
+// Some best-practice CSS that's useful for most apps
+// Just remove them if they're not what you want
+
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #131e32;
+  // font-family: 'Libre Baskerville', serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.container {
+  margin-bottom: 25px;
+}
+
+.play-button {
+  cursor: pointer;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+
+  a {
+    flex: 1;
+
+    button {
+      width: 100%;
+      background: #613d90;
+      color: #ffffff;
+      border: #613d90 solid 1px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #ffffff;
+      color: #613d90;
+    }
+
+    .current {
+      background: #131e32;
+      color: #613d90;
+    }
+  }
+}
+
+.ballot-table {
+  background: #ffffff;
+}
+
+.results-container {
+  background: #ffffff;
+  padding: 10px;
+}
+
+.rules-container {
+  color: #ffffff;
+
+  div.alignLeft {
+    text-align: left;
+    margin-bottom: 25px;
+  }
+
+  div.alignRight {
+    text-align: right;
+    margin-bottom: 25px;
+  }
+
+  h2 {
+    padding: 15px;
+  }
+
+  h4.alignRight {
+    padding-top: 10px;
+    text-align: right;
+  }
+
+  h4.alignLeft {
+    text-align: lefts;
+  }
+
+  img.img-box {
+    padding: 10px;
+    background: #2a854f;
+    float: left;
+  }
+
+  img.floatRight {
+    float: right;
+    margin-left: 10px;
+  }
+
+  img.floatLeft {
+    float: left;
+    margin-right: 10px;
+  }
+
+  p.alignRight {
+    padding-top: 10px;
+    text-align: right;
+  }
+
+  p.alignLeft {
+    text-align: left;
+  }
+
+
+}
+
+.cast-ballot-container {
+  padding: 15px;
+  margin-top: 25px;
+
+  button {
+    border-radius: 5px;
+    padding: 10px;
+    background: #613d90;
+    color: #ffffff;
+    border: #613d90 solid 1px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    color: #613d90;
+    background: #ffffff;
+    border: #613d90 solid 1px;
+  }
+}
+
+h1 {
+  color: #ffffff;
+}
+
+h2.checkout-header {
+  text-align: center;
+  color: #613d90;
+}
+
+.page-layout__viewport {
+  // background: #ffffff;
+  padding: 10px;
+}
+
+.songsSelectedInfo {
+  padding: 10px;
+}
+
+input.text-input {
+  border-radius: 5px;
+  line-height: 50px;
+  border: none;
+  // font-size: 36px;
+  // padding: 2px;
+
+}
+
+.ReactModalPortal > * {
+    // When the modal is closed, overlay div has no css class
+    // This selector should be overridden by the `&--after-open` class below
+    opacity: 0;
+}
+.ReactModal__Overlay {
+    transition: opacity 200ms ease-in-out;
+    background: rgba(0, 0, 0, 0.15);
+    &--after-open {
+        opacity: 1;
+    }
+    &--before-close {
+        opacity: 0;
+    }
+}
+
+.ReactModal__Content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  button.notLoading {
+    margin-top: 20px !important;
+    border-radius: 5px;
+    padding: 10px;
+    background: #613d90;
+    color: #ffffff;
+    border: #613d90 solid 1px;
+    margin: 0 auto;
+  }
+
+  button.isLoading {
+    margin-top: 20px !important;
+    border-radius: 5px;
+    padding: 10px;
+    background: #613d90;
+    color: #ffffff;
+    border: #613d90 solid 1px;
+    margin: 0 auto;
+    cursor: not-allowed;
+    background: #613d90;
+    width: inherit;
+  }
+
+  button.notLoading:hover {
+    color: #613d90;
+    background: #ffffff;
+    border: #613d90 solid 1px;
+    cursor: pointer;
+  }
+}
+
+input {
+  // text-align: center;
+  width: 100%;
+  outline: 0;
+  border: 1px solid #e6e7e5;
+  box-sizing: border-box;
+}
+
+
+.checkout-input {
+  border: 1px solid #e6e7e5;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+.checkout-total {
+  text-align: center;
+}
+
+
+
+
+
+.footer {
+  display: flex;
+  background: #e9eaed;
+  padding: 15px;
+  color: #959595;
+  font-size: 12px;
+  clear: both;
+
+  .footer-left {
+    flex: 1;
+    text-align: left;
+  }
+
+  .footer-center {
+    flex: 1;
+  }
+
+  .footer-right {
+    flex: 1;
+    text-align: right;
+  }
+}
+
+.squaredFour {
+  width: 20px;
+  position: relative;
+  margin: 0 auto;
+  label {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fcfff4;
+    background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    border-radius: 4px;
+    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+    &:after {
+      content: '';
+      width: 9px;
+      height: 5px;
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      border: 3px solid #333;
+      border-top: none;
+      border-right: none;
+      background: transparent;
+      opacity: 0;
+      transform: rotate(-45deg);
+    }
+    &:hover::after {
+      opacity: 0.5;
+    }
+  }
+  input[type=checkbox] {
+    visibility: hidden;
+    &:checked + label:after {
+      opacity: 1;
+    }
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+@media screen and (max-width: 480px) {
+  .mobile-hide {
+    display: none;
+  }
+}

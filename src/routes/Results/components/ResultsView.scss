@@ -1,0 +1,49 @@
+.duck {
+  display: block;
+  margin: 1.5rem auto;
+  width: 120px;
+}
+
+.index-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-input {
+  display: flex;
+}
+
+.audio-player {
+  display: none;
+}
+
+.duck {
+  display: block;
+  margin: 1.5rem auto;
+  width: 120px;
+}
+
+.results-display-buttons {
+  button {
+    border-radius: 5px;
+    padding: 10px;
+    background: #613d90;
+    color: #ffffff;
+    border: #613d90 solid 1px;
+    cursor: pointer;
+    margin: 15px;
+  }
+
+  button:hover {
+    color: #613d90;
+    background: #ffffff;
+    border: #613d90 solid 1px;
+  }
+
+  button.active {
+    background: none;
+    border: #613d90 solid 1px;
+    color: #ffffff;
+    cursor: default;
+  }
+}
